@@ -24,17 +24,17 @@ export function TodoInput({ onAdd }: TodoInputProps) {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add a new task…"
-        className="flex-1 rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-800 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
+        className="flex-1 rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-800 outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100"
       />
       <input
         type="date"
         value={dueDate}
         onChange={(e) => setDueDate(e.target.value)}
-        className="rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-600 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
+        className="rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-600 outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100"
       />
       <button
         type="submit"
-        className="rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-600"
+        className="rounded-lg bg-yellow-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-yellow-600"
       >
         Add
       </button>

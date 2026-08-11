@@ -34,7 +34,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
         type="checkbox"
         checked={todo.completed}
         onChange={() => onToggle(todo.id)}
-        className="h-5 w-5 shrink-0 cursor-pointer rounded border-slate-300 text-indigo-600 focus:ring-indigo-400"
+        className="h-5 w-5 shrink-0 cursor-pointer rounded border-slate-300 text-red-600 focus:ring-red-400"
       />
 
       <div className="min-w-0 flex-1">
@@ -52,7 +52,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
                 setIsEditing(false);
               }
             }}
-            className="w-full rounded border border-indigo-300 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-indigo-100"
+            className="w-full rounded border border-red-300 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-red-100"
           />
         ) : (
           <button
@@ -65,7 +65,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
           </button>
         )}
         {todo.dueDate && (
-          <span className={`text-xs ${overdue ? 'font-medium text-red-500' : 'text-slate-400'}`}>
+          <span className={`text-xs ${overdue ? 'font-medium text-amber-600' : 'text-slate-400'}`}>
             {overdue ? 'Overdue: ' : 'Due '}
             {formatDate(todo.dueDate)}
           </span>
@@ -74,7 +74,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
 
       <button
         onClick={() => onDelete(todo.id)}
-        className="shrink-0 text-slate-300 opacity-0 transition group-hover:opacity-100 hover:text-red-500"
+        className="shrink-0 text-slate-300 opacity-0 transition group-hover:opacity-100 hover:text-red-700"
         aria-label="Delete task"
       >
         ✕

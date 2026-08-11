@@ -14,10 +14,10 @@ function HomePage() {
   const hasCompleted = todos.some((t) => t.completed);
 
   return (
-    <div className="flex min-h-screen items-center justify-center p-4">
-      <div className="w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-xl shadow-indigo-100">
+    <div className="flex min-h-screen items-center justify-center bg-red-50 p-4">
+      <div className="w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-xl shadow-red-100">
         <div className="px-6 pt-6">
-          <h1 className="text-2xl font-bold text-slate-800">My Tasks</h1>
+          <h1 className="text-2xl font-bold text-red-700">My Tasks</h1>
         </div>
         <TodoInput onAdd={addTodo} />
         <TodoSummary

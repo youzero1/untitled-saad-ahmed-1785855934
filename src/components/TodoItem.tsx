@@ -34,7 +34,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
         type="checkbox"
         checked={todo.completed}
         onChange={() => onToggle(todo.id)}
-        className="h-5 w-5 shrink-0 cursor-pointer rounded border-slate-300 text-red-500 focus:ring-red-400"
+        className="h-5 w-5 shrink-0 cursor-pointer rounded border-slate-300 text-yellow-500 focus:ring-yellow-400"
       />
 
       <div className="min-w-0 flex-1">
@@ -52,7 +52,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
                 setIsEditing(false);
               }
             }}
-            className="w-full rounded border border-red-300 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-red-100"
+            className="w-full rounded border border-yellow-300 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-yellow-100"
           />
         ) : (
           <button
@@ -74,7 +74,7 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
 
       <button
         onClick={() => onDelete(todo.id)}
-        className="shrink-0 text-slate-300 opacity-0 transition group-hover:opacity-100 hover:text-red-700"
+        className="shrink-0 text-slate-300 opacity-0 transition group-hover:opacity-100 hover:text-yellow-700"
         aria-label="Delete task"
       >
         ✕

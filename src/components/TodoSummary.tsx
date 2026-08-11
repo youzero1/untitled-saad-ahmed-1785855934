@@ -14,7 +14,7 @@ export function TodoSummary({ remaining, total, hasCompleted, onClearCompleted }
       {hasCompleted && (
         <button
           onClick={onClearCompleted}
-          className="text-sm font-medium text-slate-400 transition hover:text-red-600"
+          className="text-sm font-medium text-slate-400 transition hover:text-yellow-600"
         >
           Clear completed
         </button>
